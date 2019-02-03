@@ -89,9 +89,10 @@ class ViewController: UIViewController {
     
     @IBAction func handleLinkedInAuthenticationButtonTap() {
         
-        let liAuthConfig = LinkedInAuthConfiguration(WithClientID: "789i307bwx6ct7",
-                                                     clientSecret: "5l9FlQQy11VRCKvU",
-                                                     redirectURI: "https://arcane-shore-56552.herokuapp.com/",
+        // Insert your LinkedIn app credentials here
+        let liAuthConfig = LinkedInAuthConfiguration(WithClientID: YOUR_CLIENT_ID,
+                                                     clientSecret: YOUR_CLIENT_SECRET,
+                                                     redirectURI: YOUR_REDIRECT_URL,
                                                      scope: [.BasicProfile, .EmailAddress])
         
         LinkedInAuth.manager.authenticate(WithConfiguration: liAuthConfig, success: { (accessToken) in
