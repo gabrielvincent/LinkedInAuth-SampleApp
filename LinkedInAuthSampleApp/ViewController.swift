@@ -90,6 +90,7 @@ class ViewController: UIViewController {
     @IBAction func handleLinkedInAuthenticationButtonTap() {
         
         // Insert your LinkedIn app credentials here
+        // If you still haven't, create an app at https://www.linkedin.com/developers/apps/
         let liAuthConfig = LinkedInAuthConfiguration(WithClientID: YOUR_CLIENT_ID,
                                                      clientSecret: YOUR_CLIENT_SECRET,
                                                      redirectURI: YOUR_REDIRECT_URL,
